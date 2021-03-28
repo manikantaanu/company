@@ -1,0 +1,68 @@
+.ecommerce,.microsoft,.bigdata,.datascience,.devops,.cloud,.devopservices,.fullstack {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    padding: 0 6rem;
+}
+.ecommerce_content > h3,.microsoft_content > h3,
+.bigdata_content > h3,.bigdata_content > h5,.datascience_content > h3,
+.devops_content > h3,.cloud_content > h3,.devopservices_content > h3,.fullstack_content > h3 {
+    color:#f57b10 ;
+    margin-bottom: 2rem;
+}
+li.list-items {
+    line-height: 2.5;
+    list-style-type: none;
+}
+.ecommerce_content >p,.microsoft_content > p,.bigdata_content > p,
+.datascience_content > p,.devops_content > p,.cloud_content > p,.fullstack_content > p{
+    line-height: 2;
+}
+.list-items > h4{
+    margin: 1.2rem 0;
+    color:#f57b10 ;
+}
+.bigdata_row{
+    display: flex;
+    flex-direction: row;  
+}
+.bigdata_row > div {
+    margin-top: 5rem;
+}
+.bigdata_left{
+    width: 40%;
+    justify-content: left; 
+}
+.bigdata_left > h6,.bigdata_row > h5{
+    color:#f57b10 ;
+}
+.grid-item > img {
+    width: 120px;
+    padding: 1rem 0;
+}
+.ecommerce_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 10px;
+    grid-gap: 1rem;
+    text-align: center;
+}
+.azure {
+    width: 18rem;
+}
+@media (max-width: 768px){
+    .ecommerce,.microsoft,.bigdata,.datascience,.devops,.cloud,.devopservices,.fullstack {
+        padding: 0 1.5rem;
+    } 
+    .bigdata_row{
+        display: flex;
+        flex-direction: column;  
+    } 
+    .bigdata_row > div {
+        margin-top: 1rem;
+    }
+    .bigdata_left{
+        width: auto;  
+    }
+}
+

@@ -1,0 +1,26 @@
+
+.h1{
+    color:blue;
+    text-align: center;
+}
+.p{
+    text-align: center;
+    font-size: 25px;
+}
+#root{
+    font-family: 'Lobster', cursive;
+    font-size: 15px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 2.5rem;
+        padding-left: .5rem;
+    }
+
+@media (max-width: 768px){
+        #root {
+            margin: 0;
+            overflow-x:hidden;
+        }
+    }
+        
+    

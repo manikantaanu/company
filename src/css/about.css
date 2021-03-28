@@ -1,0 +1,93 @@
+
+/* ABOUT US CSS*/
+.about {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0px;
+    line-height: 1.8rem;
+}
+.about_inner {
+    display: flex;
+    flex-direction: column;
+    width: 43%;
+    padding: 50px 0px;
+}
+.about_maincontent{
+    display: flex;
+    justify-content: space-around;
+}
+.about_title {
+    text-align: center;
+}
+.about_content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    padding: 20px;
+}
+.about_content > img {
+    padding: 0 50px;
+}
+
+.services_content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 10px;
+    grid-gap: 1rem;
+}
+.services-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.services-item > h4 {
+    padding-bottom: 30px;
+}
+
+@media (max-width: 768px){
+    .about{
+        padding: 20px;
+    }
+    .about_maincontent{
+        display: flex;
+        flex-direction: column;
+    }
+    .about_inner{
+        width: auto;
+    }
+}
+
+/* CAREER CSS*/
+.carrers {
+    margin-top: 20px;
+}
+.carrers-inner {
+    line-height: 2rem;
+    width: 45%;
+    margin: auto;
+}
+.carrers_content {
+    display: flex;
+    justify-content: space-around;
+}
+@media (max-width: 768px){
+    .carrers_content {
+        display: flex;
+        flex-direction: column;
+    }
+    .carrers-inner {
+        padding-top: 3rem;
+        line-height: 2rem;
+        width: auto;
+        margin: auto;
+        padding: 0 20px;
+    }
+}

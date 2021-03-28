@@ -1,0 +1,17 @@
+Components
+--------------
+what is Component
+------------------
+Components are the building blocks of any React app and a typical React 
+app will have many of these. Simply put, a component is a JavaScript class 
+or function that optionally accepts inputs i.e. properties(props) and 
+returns a React element that describes how a section of the UI 
+(User Interface) should appear.
+
+In Filename,  first letter should be starts with Uppercase[manadatory]
+
+In Component,  component first letter should be starts with Uppercase.[manadatory]
+
+Takes -> filename and component name must be same [optional]...
+
+React Fragment Element -> calls for parent Reference without Create DOM Elements...
