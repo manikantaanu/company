@@ -5,10 +5,69 @@ import ContactImg from '../images/contact-us.png'
 import RoomIcon from '@material-ui/icons/Room';
 import MailIcon from '@material-ui/icons/Mail';
 import CallIcon from '@material-ui/icons/Call';
+import axios from 'axios';
 
 //const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
-class LalauceForm extends Component {
+class Contact extends Component {
+
+    constructor(props){
+        super(props);
+        this.state={
+            name:"",
+            email:"",
+            phone:"",
+            subject:"",
+            message:"",
+            msg:""
+        }
+    }
+
+    //Input name
+    HandleInputName=(e)=>
+    {
+        this.setState({name: e.target.value})
+    }
+    //Input name
+    HandleInputEmail=(e)=>
+    {
+        this.setState({email: e.target.value})
+    } 
+    //Input name
+    HandleInputPhone=(e)=>
+    {
+        this.setState({phone: e.target.value})
+    } 
+    //Input name
+    HandleInputSubject=(e)=>
+    {
+        this.setState({subject: e.target.value})
+    }
+    HandleInputMessage=(e)=>
+    {
+        this.setState({message: e.target.value})
+    } 
+
+    HandleSubmitForm=(e)=>{
+
+       //  alert(`${this.state.name}-${this.state.email}-${this.state.phone}-${this.state.message}`)
+        e.preventDefault();
+ 
+        const formdata={
+            "name":this.state.name,
+            "email":this.state.email,
+            "phone":this.state.phone,
+            "subject":this.state.subject,
+            "message":this.state.message
+        }
+       
+         axios.post("http://localhost:9848/contact",formdata)
+         .then(()=>this.props.history.push('/'))
+
+        // .then(()=>this.setState({msg:'Thanks for Contacting us'})) to display msg after submit the data
+        
+         
+    }
 
     static defaultProps = {
         center: {
@@ -19,7 +78,9 @@ class LalauceForm extends Component {
       };
 
     render() {
+        const {name,email,phone,message,subject} = this.state;
     return (
+        
         <div className="contact">
             <div className="contact_content">
                 <h3>Get In Touch With Us</h3>
@@ -39,31 +100,34 @@ class LalauceForm extends Component {
                 </div>
                 <div className="form_inner">
                     <div className="form" >
-                        <form>
+                        
+                        <form success={this.state.formSuccess} error={this.state.formError}>
                             <div className="form-group">
                                 <label className="form-label"></label>
-                                <input type="text" placeholder="Name"  className="form-control" />
+                                <input type="text" placeholder="Name" value={name}  className="form-control" onChange={this.HandleInputName.bind(this)} />
                             </div>
 
                             <div className="form-group">
                                 <label className="form-label"></label>
-                                <input type="email" placeholder="Email" className="form-control"/>
+                                <input type="email" placeholder="Email" value={email}className="form-control" onChange={this.HandleInputEmail.bind(this)}/>
                             </div>
                             <div className="form-group">
                                 <label className="form-label"></label>
-                                <input type="text" placeholder="Phone" className="form-control"/>
+                                <input type="text" placeholder="Phone" value={phone}className="form-control" onChange={this.HandleInputPhone.bind(this)}/>
                             </div>
 
                             <div className="form-group">
                                 <label className="form-label"></label>
-                                <input type="text" placeholder="Subject" className="form-control"/>
+                                <input type="text" placeholder="Subject" value={subject} className="form-control" onChange={this.HandleInputSubject.bind(this)}/>
                             </div>
 
                             <div className="form-group">
                                     <label className="form-label"></label>
-                                    <input type="text" placeholder="Your Message" className="form-control"/>
+                                    <input type="text" placeholder="Your Message" value={message}className="form-control" onChange={this.HandleInputMessage.bind(this)}/>
                             </div>
-                            <button className="btn btn-primary" >Submit form</button>
+                            <button className="btn btn-primary" onClick={this.HandleSubmitForm}>Submit form</button>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{this.state.msg}
                         </form>
                     </div>
                 </div> 
@@ -103,4 +167,4 @@ class LalauceForm extends Component {
 }
 }
 
-export default LalauceForm 
+export default Contact

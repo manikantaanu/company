@@ -1,0 +1,44 @@
+{
+  "career": [
+    {
+      "title": "Devops Automation ",
+      "jobCateogry": "Devops",
+      "jobType": "Full-Time, Part-time",
+      "jobLocations": "Hyderbad, Banglore",
+      "Requirements": "CI/CD pipelines, Linux,Anisible installation",
+      "id": 1
+    },
+    {
+      "title": "WordPress Developer ",
+      "jobCateogry": "Wordpress",
+      "jobType": "Full-Time, Part-time",
+      "jobLocations": "Banglore, Chennai",
+      "Requirements": "Html ,css, Bootstrap, Jquery,Ajax,Javascript,Php",
+      "id": 2
+    },
+    {
+      "title": "Android Developer ",
+      "jobCateogry": "Kotlin",
+      "jobType": "Full-Time, Part-time",
+      "jobLocations": "Hyderbad, Chennai",
+      "Requirements": "Kotlin , React-Native",
+      "id": 3
+    },
+    {
+      "title": "Full Stack Dveloper",
+      "jobCateogry": "React Js Developer",
+      "jobType": "Full-Time, Part-time",
+      "jobLocations": "Hyderbad, Banglore, Chennai",
+      "Requirements": "React Js, Html, Css, Bootstrap, Material UI,Website_Responsive,Javascript Basics, ES6",
+      "id": 4
+    },
+    {
+      "title": "Backend Developer",
+      "jobCateogry": "Node and Mongo DB",
+      "jobType": "Full-Time, Part-time",
+      "jobLocations": "Hyderbad, Banglore,Chennai",
+      "Requirements": "Express, Mongo Db,Node js",
+      "id": 5
+    }
+  ]
+}
