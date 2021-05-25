@@ -1,7 +1,7 @@
 {
-  "name": "textiles",
+  "name": "araminds",
   "version": "0.1.0",
-  "homepage": "http://araminds.com/projects/araminds/",
+  "homepage": "http://araminds.com/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
@@ -15,7 +15,9 @@
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "concurrently": "^6.0.0",
+    "express": "^4.17.1",
     "google-map-react": "^2.1.9",
+    "mongoose": "^5.12.2",
     "react": "^16.13.1",
     "react-bootstrap": "^1.5.2",
     "react-dom": "^16.13.1",
@@ -25,7 +27,7 @@
   },
   "scripts": {
     "start": " set port=6642 && react-scripts start",
-    "mani": "concurrently \"npm start \"",
+    "mani": "concurrently \"npm start \" \"json-server --watch contact.json --port 9848\" \"json-server --watch career.json --port 9491\" ",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

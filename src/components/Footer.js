@@ -4,7 +4,7 @@ import React from 'react'
 
 const Footer = () => {
     return (<>
-       {/*  <div className="container-fluid bg-light p-4 ">
+        {/* <div className="container-fluid bg-light p-4 ">
             <div className="row">
                 <div className="col-lg-4">
                   <img src={logo} className="floatEnd"alt="logo"width="150"/>
@@ -14,9 +14,8 @@ const Footer = () => {
                     <ul>
                         <li><NavLink className="nav-link"to="/home">Home</NavLink> </li>
                         <li><NavLink className="nav-link"to="/about">About Us</NavLink> </li>
-                        <li>Solutions</li>
-                        <li>Careers</li>
-                        <li>Contact Us</li>
+                        <li><NavLink className="nav-link"to="/careers">Careers</NavLink></li>
+                        <li><NavLink className="nav-link"to="/contact">Contact Us</NavLink></li>
                     </ul>
             </div>
             <div className="col-lg-4">
@@ -26,7 +25,7 @@ const Footer = () => {
                    Fremont, CA 94538. </p>
                 <p>Email: info@araminds.com</p>
             </div>
-            </div>
+    </div>
             
         </div> */}
         <div className="container-fluid bg-dark">

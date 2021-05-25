@@ -74,10 +74,47 @@
     width: 45%;
     margin: auto;
 }
+.carrers-inner p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+}
 .carrers_content {
     display: flex;
     justify-content: space-around;
 }
+.carrer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding: 40px;
+    grid-gap: 1rem;
+}
+.carrer-gridinner{
+       background-color: rgba(255, 255, 255, 0.8); 
+        border-top: 2px solid #b2beb5;
+        padding: 20px;
+        font-size: 16px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+       /* border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) */
+}
+.jobpost{
+    text-align: center;
+    color: peru;
+}
+.carrerTitle{
+    text-align: center;
+    color: peru;
+    padding-top: 20px;
+}
+
+/* Career Responsive */
 @media (max-width: 768px){
     .carrers_content {
         display: flex;

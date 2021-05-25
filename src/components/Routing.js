@@ -20,6 +20,7 @@ import DevopServices from './courses/DevopServices'
 import FullStack from './courses/FullStack'
 import Contact from './Contact'
 import Career from './Careers'
+import Careerview from './Careerview'
 
 
 
@@ -45,7 +46,9 @@ const Routing = () => {
                                 <Route path = "/cloud-services" component = { CloudServices }/>
                                 <Route path = "/devops-services" component = { DevopServices }/>
                                 <Route path = "/full-stack-development" component = { FullStack }/>
-                                <Route path = "/careers" component = { Career }/>
+                                <Route exact path = "/careers" component = { Career }/>
+                                <Route path = "/careers/:careerid" component = { Careerview }/>
+
                                 <Route path = "/contact" component = { Contact }/>
           
                                 <Redirect to = "/home"/>

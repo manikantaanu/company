@@ -30,7 +30,7 @@ const About =()=>
                 </div>
                 <div className="services_content">
                         <div className="services-item">
-                            <h4>Big data solutions</h4>
+                            <h4>Big Data Solutions</h4>
                             <p>We offer a variety of professional services that
                                         help you achieve your business goals. Do you need help with 
                                         building a comprehensive big data stratagy to get ahead?</p>
@@ -42,7 +42,7 @@ const About =()=>
                                         marketing tips that fit your schedule, our programs fit the bill.</p>
                         </div>
                         <div className="services-item">
-                            <h4>BI Conuslting</h4>
+                            <h4>BI Consulting</h4>
                             <p>Where do we deliver the most? In our client’s results. We’ve worked with companies from 
                                         single-person startups to Fortune 500 executives and everything in between. We provide a 
                                         guarantee that if you follow our plan and don’t see amazing results, you don’t pay.</p>
